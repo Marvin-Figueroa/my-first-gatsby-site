@@ -1,6 +1,6 @@
 // Step 1: Import React
 import * as React from 'react';
-import { Link } from 'gatsby';
+import Seo from '../components/seo';
 import Layout from '../components/layout';
 
 // Step 2: Define your component
@@ -14,12 +14,7 @@ const AboutPage = () => {
   );
 };
 
-export const Head = () => (
-  <>
-    <title>About Me</title>
-    <meta name='description' content='Your description' />
-  </>
-);
+export const Head = () => <Seo title='About Me' />;
 
 // Step 3: Export your component
 export default AboutPage;
