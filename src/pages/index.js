@@ -2,14 +2,20 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
+import { StaticImage } from 'gatsby-plugin-image';
 
 // Step 2: Define your component
 const IndexPage = () => {
   return (
     <Layout pageTitle='Home Page'>
-      <p className='text-xl'>
+      <p className='text-xl my-6'>
         I'm making this by following the Gatsby Tutorial.
       </p>
+      <StaticImage
+        className='w-56'
+        alt='Gatsby Logo'
+        src='../images/icon.png'
+      />
     </Layout>
   );
 };
